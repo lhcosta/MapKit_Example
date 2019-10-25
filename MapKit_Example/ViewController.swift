@@ -11,9 +11,9 @@ import MapKit
 
 class ViewController: UIViewController {
     
+    //MARK:- Properties
     var countries : [Country]!
     @IBOutlet weak var tableViewCountries: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,7 @@ class ViewController: UIViewController {
 
 }
 
+//MARK:- UITableViewDataSource
 extension ViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,6 +57,7 @@ extension ViewController : UITableViewDataSource {
 
 }
 
+//MARK:- UITableViewDelegate
 extension ViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

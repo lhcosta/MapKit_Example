@@ -10,6 +10,7 @@ import UIKit
 
 class CountriesTableViewCell: UITableViewCell {
     
+    //MARK:- Properties
     @IBOutlet weak var flag: UIImageView!
     @IBOutlet weak var nameCountry: UILabel!
     private(set) var country : Country?
